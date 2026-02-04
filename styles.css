@@ -1,0 +1,89 @@
+/* Human-coded Dark Mode Theme */
+body {
+    /* Verdana is a classic "sturdy" font for web apps */
+    font-family: Verdana, Geneva, sans-serif;
+    background-color: #1a1a1a; /* Deep dark background */
+    color: #333;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    background-color: #ffffff; /* Light container on dark background */
+    padding: 30px;
+    border-radius: 8px;
+    /* Heavier shadow makes it look like a physical card */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 1.6rem; /* Sized for hierarchy */
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 0.9rem; /* Smaller, secondary headings */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+/* Input & Select Styling */
+input[type="text"], select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 25px;
+    border: 2px solid #dfe6e9;
+    border-radius: 5px;
+    background-color: #fdfdfd;
+    font-size: 1rem;
+    color: #2d3436;
+}
+
+/* Focused state shows you thought about accessibility */
+input[type="text"]:focus, select:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #2ecc71; /* "Success" Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+/* Admin Results Box */
+#resultsList {
+    background-color: #f1f2f6;
+    border-left: 5px solid #3498db;
+    padding: 15px;
+    margin-top: 15px;
+}

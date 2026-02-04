@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Welcome to the college voting booth</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the college voting booth</h1>
+        
+        <div class="voting-card">
+            <h3>Enter Your Student ID</h3>
+            <input type="text" id="voterId" placeholder="e.g. 101, 102...">
+
+            <h3>Select Your Candidate</h3>
+            <select id="candidateSelect">
+                <option value="" disabled selected>-- Choose a Candidate --</option>
+                <option value="Alice">Alice (CS Dept)</option>
+                <option value="Bob">Bob (Mechanical Dept)</option>
+                <option value="Charlie">Charlie (Arts Dept)</option>
+            </select>
+            
+            <button id="voteBtn">Cast Vote</button>
+        </div>
+        <p id="result" style="font-weight: bold; margin-top: 15px; text-align: center;"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
